@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.workout.exercise.activity.ExerciseActivity"
+    android:keepScreenOn="true"
+    android:animateLayoutChanges="true"
+    android:background="#fff">
+
+    <include layout="@layout/action_bar"
+        android:id="@+id/include" />
+
+    <ProgressBar
+        android:id="@+id/seek_progress_count"
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:scaleY="3" />
+
+    <TextView
+        android:id="@+id/txt_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seek_progress_count"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:padding="5dp"
+        android:textColor="@color/colorPrimary"/>
+
+    <ImageView
+        android:id="@+id/complete_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/txt_msg"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/long_txt"
+        android:adjustViewBounds="true"
+        android:src="@drawable/complete"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/long_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/progress_container"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/tip"
+        android:gravity="center"
+        android:lineSpacingExtra="5dp"
+        android:textSize="22sp"
+        android:padding="10dp"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <ImageView
+        android:id="@+id/ex_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_below="@id/seek_progress_count"
+        android:layout_above="@id/progress_container"/>
+
+    <FrameLayout
+        android:id="@+id/progress_container"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@id/bottom_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:visibility="invisible">
+
+        <ProgressBar
+            android:id="@+id/time_progress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:indeterminate="false"
+            android:progressDrawable="@drawable/progress_drawable"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+            android:rotationY="180"
+            />
+
+        <TextView
+            android:id="@+id/time_count_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/countdown"
+            style="@style/count_txt_style" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/bottom_btn"
+        style="@style/btn_end_style"
+        android:layout_above="@id/adView"
+        android:text="@string/btn_start"
+        android:onClick="bottom_btn_click"/>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:adUnitId="@string/AdmobBannerAdsID"
+        app:adSize="SMART_BANNER"/>
+
+    <LinearLayout
+        android:id="@+id/end_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom_btn"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <Button
+            android:text="@string/btn_start_again"
+            style="@style/btn_end_style"
+            android:onClick="restart"/>
+        <Button
+            android:text="@string/btn_set_reminder"
+            style="@style/btn_end_style"
+            android:onClick="setReminder"/>
+    </LinearLayout>
+</RelativeLayout>

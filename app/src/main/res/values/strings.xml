@@ -1,0 +1,100 @@
+<resources>
+    <string name="app_name">7 Min Workout</string>
+
+    <string name="MORE_APP_LINK">Express Template</string>
+
+    <string name="AdmobBannerAdsID">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="admob_fullpage_ad_id">ca-app-pub-3940256099942544/1033173712</string>
+
+
+    <!-- Notification message here-->
+    <string name="notification_title">This is the time for exercise.</string>
+
+    <string name="btn_start">Start</string>
+
+    <!-- Default workout time in seconds-->
+    <integer name="diff_medium">30</integer>
+
+    <!-- Default rest time in seconds-->
+    <integer name="rest_time">10</integer>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--ExerciseActivity-->
+    <string name="btn_start_again">Start Again</string>
+    <string name="btn_set_reminder">Set Reminder</string>
+    <string name="btn_skip">SKIP</string>
+    <string name="title_get_ready_for">GET READY FOR</string>
+    <string name="btn_done">DONE</string>
+    <string name="btn_end">END</string>
+    <string name="msg_congratulations">Congratulations! You have done the workout!</string>
+    <string name="btn_menu">MENU</string>
+    <string name="dialog_stop_exe_title">Stop</string>
+    <string name="dialog_msg">Do you want to stop workout ?</string>
+    <string name="btn_dialog_yes">Yes</string>
+    <string name="btn_dialog_no">No</string>
+    <string name="title_rest_time">Rest Time</string>
+    <string name="title_exercise_complete">EXERCISE COMPLETE</string>
+
+    <!--MainActivity-->
+    <string name="title_exercise">Exercise</string>
+    <string name="title_calculator">Calculator</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_history">History</string>
+    <string name="dialog_Main_activity_title">Quit</string>
+    <string name="dialog_main_activity_msg">Do you want to quit this app ?</string>
+    <string name="dialog_rate_us">Rate US</string>
+    <string name="dialog_btn_yes">YES</string>
+
+    <!--bmiFragment-->
+    <string name="tab_metric_units">Metric Units</string>
+    <string name="tab_us_units">US Units</string>
+    <string name="txt_weight_in_kg">WEIGHT(in kg)</string>
+    <string name="txt_height_in_cm">HEIGHT(in cm)</string>
+    <string name="btn_calculate">Calculate</string>
+    <string name="hint_feet">Feet</string>
+    <string name="hint_inch">Inch</string>
+    <string name="msg_bmi_result">Your BMI</string>
+    <string name="toast_invalid_values">Invalid Values</string>
+    <string name="msg_under_weight">Under Weight</string>
+    <string name="sug_under_weight">Oops! You really need to take care of yours better! Eat more!</string>
+    <string name="msg_Normal">Normal</string>
+    <string name="sug_Normal">Congratulations! You are in a good shape!</string>
+    <string name="msg_Over_Weight">Over Weight</string>
+    <string name="sug_Over_Weight">Oops! You really need to take care of yourself! Workout maybe!</string>
+    <string name="msg_Obese">Obese</string>
+    <string name="sug_Obese">Oops! You really need to take care of yourself! Workout maybe!</string>
+    <string name="msg_Severely_Obese">Severely Obese</string>
+    <string name="sug_Severely_Obese">OMG! You are in a very dangerous condition! Act now!</string>
+    <string name="msg_Very_Severely_Obese">Very Severely Obese</string>
+    <string name="sug_Very_Severely_Obese">OMG! You are in a very dangerous condition! Act now!</string>
+    <string name="actionbar_calculate_bmi">Calculate bmi</string>
+
+    <!--exerciseFragment-->
+    <string name="actionbar_exercise_list">exercise list</string>
+
+    <!--myExerciseFragment-->
+    <string name="txt_today">Today</string>
+    <string name="txt_exercise_complete">Exercise Complete</string>
+    <string name="actionbar_myExerciseFragment">history</string>
+
+    <!--settingFragment-->
+    <string name="title_workout_difficulty">workout Difficulty</string>
+    <string name="tab_easy">Easy</string>
+    <string name="tab_medium">Medium</string>
+    <string name="tab_hard">Hard</string>
+    <string name="txt_sound">Sound</string>
+    <string name="txt_set_reminder">set reminder</string>
+    <string name="sun">Sun</string>
+    <string name="mon">Mon</string>
+    <string name="tue">tue</string>
+    <string name="wed">wed</string>
+    <string name="thu">thu</string>
+    <string name="fri">fri</string>
+    <string name="sat">sat</string>
+    <string name="btn_set">Set</string>
+    <string name="actionbar_setting">settings</string>
+    <string name="toast_reminder_remove">Reminder remove</string>
+    <string name="toast_reminder_set">Reminder set</string>
+
+</resources>
